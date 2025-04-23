@@ -15,3 +15,19 @@
 # Tarea:
 # • Identifica las responsabilidades múltiples.
 # • Refactoriza el código aplicando SRP.
+
+# Código refactorizado:
+
+class ReportGenerator:
+    def generate(self, data):
+        return f"Generando reporte con: {data}"
+
+
+class FileSaver:
+    def save(self, content):
+        return f"Guardando reporte en archivo: {content}"
+
+
+class EmailSender:
+    def send(self, email, content):
+        return f"Enviando {content} a email: {email}"
