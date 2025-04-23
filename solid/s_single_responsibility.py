@@ -18,16 +18,19 @@
 
 # Código refactorizado:
 
-class ReportGenerator:
-    def generate(self, data):
+# Primero identifique 3 funciones para la misma clase, que son generar un reporte, guardar el reporte y enviar el reporte por email.
+# Luego cree 3 clases diferentes para cada una de las funciones, y cada clase tiene su propia función. De esta menera cada clase tiene una sola responsabilidad.
+
+class ReportGenerator:  # Clase para generar reportes
+    def generate(self, data):   # Su respectiva función para generar un reporte
         return f"Generando reporte con: {data}"
 
 
-class FileSaver:
-    def save(self, content):
+class FileSaver:    # Clase para guardar reportes
+    def save(self, content):    # Su respectiva función para guardar un reporte
         return f"Guardando reporte en archivo: {content}"
 
 
-class EmailSender:
-    def send(self, email, content):
+class EmailSender:  # Clase para enviar reportes por email
+    def send(self, email, content):  # Su respectiva función para enviar un reporte por email
         return f"Enviando {content} a email: {email}"
