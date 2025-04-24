@@ -16,21 +16,22 @@
 # • Identifica las responsabilidades múltiples.
 # • Refactoriza el código aplicando SRP.
 
-# Código refactorizado:
-
+######################### DESARROLLO #########################
 # Primero identifique 3 funciones para la misma clase, que son generar un reporte, guardar el reporte y enviar el reporte por email.
 # Luego cree 3 clases diferentes para cada una de las funciones, y cada clase tiene su propia función. De esta menera cada clase tiene una sola responsabilidad.
 
-class ReportGenerator:  # Clase para generar reportes
-    def generate(self, data):   # Su respectiva función para generar un reporte
+# Código refactorizado:
+
+class GeneradorReporte:  # Clase para generar reportes
+    def generar(self, data):   # Su respectiva función para generar un reporte
         return f"Generando reporte con: {data}"
 
 
-class FileSaver:    # Clase para guardar reportes
-    def save(self, content):    # Su respectiva función para guardar un reporte
+class GuardarArchivo:    # Clase para guardar reportes
+    def guardar(self, content):    # Su respectiva función para guardar un reporte
         return f"Guardando reporte en archivo: {content}"
 
 
-class EmailSender:  # Clase para enviar reportes por email
-    def send(self, email, content):  # Su respectiva función para enviar un reporte por email
+class EnviarEmail:  # Clase para enviar reportes por email
+    def enviar(self, email, content):  # Su respectiva función para enviar un reporte por email
         return f"Enviando {content} a email: {email}"
