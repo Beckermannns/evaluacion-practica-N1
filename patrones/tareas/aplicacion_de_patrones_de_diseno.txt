@@ -1,0 +1,33 @@
+Aplicación de Patrones de Diseño
+
+Patrón Creacional – Factory Method
+Descripción:
+Necesitas crear distintos tipos de tareas: TareaNormal, TareaUrgente,
+TareaProgramada. Actualmente todo se instancia con new.
+Tarea:
+• Crea una jerarquía de clases Tarea con subclases específicas.
+• Implementa un Factory Method para encapsular la lógica de creación.
+
+Patrón Estructural – Decorator
+Descripción:
+Quieres agregar características adicionales a las tareas (por ejemplo: "Con archivo adjunto",
+"Marcada como importante") sin modificar la clase original Tarea.
+Tarea:
+• Usa el patrón Decorator para extender funcionalidades.
+• Permite combinar múltiples decoradores (por ejemplo: TareaUrgente + Adjuntos).
+
+Patrón de Comportamiento – Strategy
+Descripción:
+Se necesita mostrar las tareas ordenadas de diferentes maneras:
+• Por fecha
+• Por prioridad
+• Por estado
+Tarea:
+• Crea una interfaz de ordenamiento (OrdenamientoStrategy)
+• Implementa diferentes estrategias y permite cambiarlas en tiempo de ejecución.
+
+Desarrollo
+
+Primero, investigue sobre las estructuras sugeridas (hexagonal, capas, DDD) y decidi ir por capas, por su simpleza y facilidad para soluciones como la de este caso
+Luego comenzamos con la creacion de tareas para construir el Factory. Se desarrollan las clases correspondientes y se crea el Factory Mehod llamado TareaFactory
+Se realiza una prueba y se verifica que este todo ok.
