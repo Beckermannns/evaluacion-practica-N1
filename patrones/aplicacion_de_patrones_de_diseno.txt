@@ -31,3 +31,8 @@ Desarrollo
 Primero, investigue sobre las estructuras sugeridas (hexagonal, capas, DDD) y decidi ir por capas, por su simpleza y facilidad para soluciones como la de este caso
 Luego comenzamos con la creacion de tareas para construir el Factory. Se desarrollan las clases correspondientes y se crea el Factory Mehod llamado TareaFactory
 Se realiza una prueba y se verifica que este todo ok.
+Se implementan decoradores, para agregar archivos adjuntos, importante y responsable a cada tarea.
+finalmente con stretegy se defnen clases de ordenacion por tipo, estado y responsable.
+Main.py contiene el codigo que comprueba todo lo desarrollado e imprime en pantalla ejemplos de uso de cada uno de los disenos aplicados.
+
+Durante el desarrollo me tope con varios problemas de decision entre una estructura de carpetas y otra, por lo que no quedo lo mas prolija posible.
